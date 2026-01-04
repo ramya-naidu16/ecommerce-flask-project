@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+
+<h2>Your Cart</h2>
+
+{% for item in cart %}
+    <p>{{ item.name }} - ₹{{ item.price }}</p>
+{% endfor %}
+
+<h3>Total Amount: ₹{{ total }}</h3>
+
+<a href="/">Back to Home</a>
+
+</body>
+</html>
